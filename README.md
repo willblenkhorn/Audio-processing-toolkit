@@ -22,9 +22,8 @@ Audio processing toolkit
 * Eg. Snd (baseclass) -> loadSnd (inherited)
 * Eg. Snd (baseclass) -> fttSnd (inherited)
 * Eg. Snd (baseclass) -> cwtSnd (inherited)
-
 * Eg. iface(interface baseclass) -> sndGraph (inherited toggleable pannel)
 * Eg. iface(interface baseclass) -> fftGraph (inherited toggleable pannel)
 * Eg. iface(interface baseclass) -> cwtGraph (inherited toggleable pannel)
- 
+* 
 * More concrete plans will be made once we know the data structures we need to organise in more detail.
