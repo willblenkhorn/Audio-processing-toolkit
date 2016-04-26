@@ -43,7 +43,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 
 * CWT is discussed here: https://en.wikipedia.org/wiki/Continuous_wavelet_transform
 * CWT library: https://github.com/regeirk/pycwt
-* FIR filters are discussed here: http://www.fourier-series.com/fourierseries2/FIR-filter.html
+* **FIR filters are discussed here** **[READ FIRST]**: http://www.fourier-series.com/fourierseries2/FIR-filter.html
 * Implemented using a FFT from numpy: http://www.scipy.org/
 * Faster FFT options to try later:
 * https://github.com/hgomersall/pyFFTW # A FFTW python wrapper with a numpy dropin replacement, handy
