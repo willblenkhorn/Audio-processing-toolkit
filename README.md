@@ -37,8 +37,6 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * CWT_filter( data ) # use amplitude to filter, can use local amplitude density to filter too
 * plot( CWT( data ) ) # Plots the frequencies present as a function of time
 
-* More concrete plans will be made once we know the data structures we need to organise in more detail.
-
 ## Background reading:
 
 * CWT is discussed here: https://en.wikipedia.org/wiki/Continuous_wavelet_transform
