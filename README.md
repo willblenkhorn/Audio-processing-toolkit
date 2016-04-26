@@ -33,14 +33,11 @@ Audio processing toolkit
 
 * CWT is discussed here: https://en.wikipedia.org/wiki/Continuous_wavelet_transform
 * CWT library: https://github.com/regeirk/pycwt
-
 * FIR filters are discussed here: http://www.fourier-series.com/fourierseries2/FIR-filter.html
 * Implemented using a FFT from numpy: http://www.scipy.org/
-
-* To measure the frequencies as a function of time we divide the signal, apply a "smoothing function" called a window function and then do a FFT:
+* To measure the frequencies as a function of time we divide the signal, apply a "smoothing function" called a window function and then do a FFT: 
 * https://en.wikipedia.org/wiki/Short-time_Fourier_transform
 * https://en.wikipedia.org/wiki/Window_function
-
 * GUI library for python, which uses the cross-platform QT toolkit: https://wiki.qt.io/PySide
 * Graphing library in python: http://matplotlib.org/
 * Graphing library in C++ in case that's too slow: http://www.qcustomplot.com/
