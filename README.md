@@ -53,4 +53,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * https://en.wikipedia.org/wiki/Window_function
 * GUI library for python, which uses the cross-platform PyQT5 toolkit: https://www.riverbankcomputing.com/news
 * Graphing library in python: http://matplotlib.org/
+* Integrating matplotlib into PyQT: http://matplotlib.org/examples/user_interfaces/embedding_in_qt4.html
 * Graphing library in C++ in case that's too slow: http://www.qcustomplot.com/
