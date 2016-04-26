@@ -14,7 +14,7 @@ Audio processing toolkit
 * To compare FIR filters to a filter made with a CWT with the PyCWT library
 * Use CWT to find "low energy" parts of the spectrum and remove these from the result, assumes low energy = noise
 * create a "sound profile" of speach and then filter outside this with a CWT to remove background noise eg road (low frequencies)
-* Create basic GUI using PySide library to display graphical output, enable options, load files etc
+* Create basic GUI using PyQT5 library to display graphical output, enable options, load files etc
 
 ## Coding organisation:
 
@@ -49,6 +49,6 @@ Audio processing toolkit
 * To measure the frequencies as a function of time we divide the signal, apply a "smoothing function" called a window function and then do a FFT: 
 * https://en.wikipedia.org/wiki/Short-time_Fourier_transform
 * https://en.wikipedia.org/wiki/Window_function
-* GUI library for python, which uses the cross-platform QT toolkit: https://wiki.qt.io/PySide
+* GUI library for python, which uses the cross-platform PyQT5 toolkit: https://www.riverbankcomputing.com/news
 * Graphing library in python: http://matplotlib.org/
 * Graphing library in C++ in case that's too slow: http://www.qcustomplot.com/
