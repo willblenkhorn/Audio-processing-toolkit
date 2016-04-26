@@ -36,7 +36,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * CWT_smooth( data, blurWidth ) # Apply blur of width blurWidth to CWT
 * CWT_filter( data ) # use amplitude to filter, can use local amplitude density to filter too
 * plot( CWT( data ) ) # Plots the frequencies present as a function of time
-* 
+
 * More concrete plans will be made once we know the data structures we need to organise in more detail.
 
 ## Background reading:
@@ -53,3 +53,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Integrating matplotlib into PyQT: http://matplotlib.org/examples/user_interfaces/embedding_in_qt4.html
 * Graphing library in C++ in case that's too slow: http://www.qcustomplot.com/ which turns out to have some DIY python bindings of it's own https://github.com/dimV36/QCustomPlot-PyQt5  usage: http://developers-club.com/posts/260761/
 * Discussion about loading and playing sound files: http://bastibe.de/2013-11-27-audio-in-python.html
+* Discussion about normalisation and about Cython for speeding it all up: http://bastibe.de/2012-11-02-real-time-signal-processing-in-python.html
+
