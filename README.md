@@ -20,12 +20,20 @@ Audio processing toolkit
 
 * Aim to associate data with their associated functions within a class to better organise the code as it grows
 * Class heirarchies with inheritance.
-* Eg. Snd (baseclass) -> loadSnd (inherited)
-* Eg. Snd (baseclass) -> fttSnd (inherited)
-* Eg. Snd (baseclass) -> cwtSnd (inherited)
-* Eg. iface(interface baseclass) -> sndGraph (inherited toggleable pannel)
-* Eg. iface(interface baseclass) -> fftGraph (inherited toggleable pannel)
-* Eg. iface(interface baseclass) -> cwtGraph (inherited toggleable pannel)
+* sndLoad( file ) # loaded into data
+* sndPlay( data )
+* sndDownSample( data ) # Reduce sampling rate
+* sndPadZeros( data ) # FFT() is faster on 2^N length arrays so add zeros to one end to the nearest 2^N
+* FFT( data )   # decompose sound into sinusoid and cosine frequencies
+* FIR_filter( data, windowFn, bandwidth, isHighPass, isLowPass )  # This is a filter on the FFT() output
+* data is an array, windowFn is a window function to prevent high frequency "ringing", bandwidth is the width of the filter, isHighPass is a bool for if the filter will reduce low frequency amplitudes preserving high frequency amplitudes, isLowPass is a bool for if the filter will reduce high frequency amplitudes preserving low frequency amplitudes.
+* IFFT( data ) # converts frequency information back into time information (sound)
+* STFFT( data, dt, windowFn ) # Short time FFT() allows the frequencies to monitored as a fn of time, dt is the time interval, windowFn is the window function.
+* plot( FFT( data ) ) # graphs the FFT information using Matplotlib
+* CWT( data ) # shows how frequency information changes in time using a continuous wavelet transform method
+* CWT_smooth( data, blurWidth ) # Apply blur of width blurWidth to CWT
+* CWT_filter( data ) # use amplitude to filter, can use local amplitude density to filter too
+* plot( CWT( data ) ) # Plots the frequencies present as a function of time
 * 
 * More concrete plans will be made once we know the data structures we need to organise in more detail.
 
