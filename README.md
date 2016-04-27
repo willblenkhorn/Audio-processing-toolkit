@@ -25,7 +25,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * sndDownSample( data ) # Reduce sampling rate
 * sndPadZeros( data ) # FFT() is faster on 2^N length arrays so add zeros to one end to the nearest 2^N
 * FFT( data )   # decompose sound into sinusoid and cosine frequencies
-* freqShift( data, absShift ) # can shift the sound up or down in frequency by absShift
+* freqShift( data, absShift ) # can shift the sound up or down in frequency by absShift by multiplying the sound's frequency spectrum by a cosine wave
 * volumeNorm( data, normMethod ) # detrends the data with respect to time, normMethod could be linear or some tailor expansion
 * FIR_filter( data, windowFn, bandwidth, isHighPass, isLowPass )  # This is a filter on the FFT() output
 * data is an array, windowFn is a window function to prevent high frequency "ringing", bandwidth is the width of the filter, isHighPass is a bool for if the filter will reduce low frequency amplitudes preserving high frequency amplitudes, isLowPass is a bool for if the filter will reduce high frequency amplitudes preserving low frequency amplitudes.
