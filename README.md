@@ -15,6 +15,8 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Use CWT to find "low energy" parts of the spectrum and remove these from the result, assumes low energy = noise
 * create a "sound profile" of speach and then filter outside this with a CWT to remove background noise eg road (low frequencies)
 * Create basic GUI using PyQT5 library to display graphical output, enable options, load files etc
+* Use data to analyse data according to: https://en.wikipedia.org/wiki/Data_analysis#Analytical_activities_of_data_users
+* Aim to classify different kinds of sounds eg men and women employing these methods
 
 ## Coding organisation:
 
