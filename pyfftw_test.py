@@ -17,7 +17,6 @@ import pyfftw   # FFTW library python bindings
 import multiprocessing # Gets num cpu threads
 import matplotlib.pyplot as plt # graph plotting
 nthreads = multiprocessing.cpu_count()
-#from numba import jit
 
 nthreads = multiprocessing.cpu_count()
 sampleRate = 128 # Hz
@@ -26,27 +25,8 @@ lenInput = tInput * sampleRate
 freq1 = 20 # Hz  
 freq2 = 50 # Hz
 nyquist = 2*sampleRate # Hz, this is the max freq, can reliably be sampled
+
 start = time.time() # start timer
-"""
-@jit # Numba accellerated data initialisation
-def dataInit( sampleRate, freq1, freq2 ):
-
-    #Data initialisation function, 
-    #accepts sampling rate and two input freq 
-    
-    input = np.random.rand(lenInput).astype('complex128') # 32 bit real and 32 bit imag
-    time_s = np.linspace( 0.0, (lenInput/sampleRate),  num = lenInput )
-    
-    for i in range(len(input)):
-        input[i] += np.cos( 2*np.pi* (time_s[i]) * freq1 )
-        input[i] += np.cos( 2*np.pi* (time_s[i]) * freq2 )
-    return (input, time_s)
-
-
-# Initialise the input data
-input, time_s = dataInit( sampleRate, freq1, freq2 )
-"""
-
 # Numpy data initialisation
 time_s = np.linspace( 0.0, (lenInput/sampleRate),  num = lenInput )
 input = np.random.rand(lenInput).astype('complex128') # 64 bit real and 64 bit imag
