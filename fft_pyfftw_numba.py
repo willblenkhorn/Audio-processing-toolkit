@@ -1,5 +1,4 @@
 """
-
 This is a FFT and numba profiling test file
 FFTW library is 3.56x faster than numpy's fft
 Numba is 31x faster than stock python when doing loops over arrays
