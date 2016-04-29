@@ -17,6 +17,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Create basic GUI using PyQT5 library to display graphical output, enable options, load files etc
 * Do analysis of data according to: https://en.wikipedia.org/wiki/Data_analysis#Analytical_activities_of_data_users
 * Aim to classify different kinds of sounds eg men and women employing these methods
+* 
 
 ## Coding organisation:
 
@@ -56,5 +57,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Discussion about normalisation and about Cython for speeding it all up: http://bastibe.de/2012-11-02-real-time-signal-processing-in-python.html
 * There are easier alternatives for speedups such a Numba: http://numba.pydata.org/ which uses native python code, another native python compiler which doesn't need code alterations and works well with numpy etc looks most ideal, obviously we need to benchmark all. This is http://nuitka.net/
 * Clustering analysis in python: http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_iris.html
-*
+* Machine learning/ statistical analysis: "The Elements of Statistical Learning", Springer, Trevor Hastie, 2013
 
