@@ -1,3 +1,11 @@
+"""
+FFT example, annotated version of: http://docs.scipy.org/doc/scipy/reference/tutorial/fftpack.html
+Vary N and see how the precision changes, vary T also.
+
+This is meant as an intro to numpy basics as well as FFTs and simple plotting with matplotlib
+
+"""
+
 import numpy as np
 from scipy.fftpack import fft
 
