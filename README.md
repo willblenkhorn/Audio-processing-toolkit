@@ -60,5 +60,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Clustering analysis in python: http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_iris.html
 * Machine learning/ statistical analysis: "The Elements of Statistical Learning", Springer, Trevor Hastie, 2013
 * Machine learning, model validation, data error to model error analysis are all key.
-* Python machine learning: http://scikit-learn.org/stable/ tutorials too: http://scikit-learn.org/stable/tutorial/index.html
+* Python machine learning: http://scikit-learn.org/stable/ tutorials too: http://scikit-learn.org/stable/tutorial/index.html as well as a flow chart to help you decide what component you need: http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+* Perhaps we can aim to use some of each component for something eg man vs woman clustering with unlabelled data and classification once they are labelled. Predicting a quantity such as delay time between two sound signals in high noise from a cross-correlation. Dimensionality reduction could be some sort of compression or noise removal technique in the frequency domain?
+* Individual component analysis looks interesting: http://scikit-learn.org/stable/tutorial/statistical_inference/unsupervised_learning.html#independent-component-analysis-ica
 
