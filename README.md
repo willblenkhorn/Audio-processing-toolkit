@@ -60,4 +60,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Clustering analysis in python: http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_iris.html
 * Machine learning/ statistical analysis: "The Elements of Statistical Learning", Springer, Trevor Hastie, 2013
 * Machine learning, model validation, data error to model error analysis are all key.
+* Python machine learning: http://scikit-learn.org/stable/
 
