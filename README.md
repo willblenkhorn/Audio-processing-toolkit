@@ -63,4 +63,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Python machine learning: http://scikit-learn.org/stable/ tutorials too: http://scikit-learn.org/stable/tutorial/index.html as well as a flow chart to help you decide what component you need: http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 * Perhaps we can aim to use some of each component for something eg man vs woman clustering with unlabelled data and classification once they are labelled. Predicting a quantity such as delay time between two sound signals in high noise from a cross-correlation. Dimensionality reduction could be some sort of compression or noise removal technique in the frequency domain?
 * Individual component analysis looks interesting: http://scikit-learn.org/stable/tutorial/statistical_inference/unsupervised_learning.html#independent-component-analysis-ica
+* Clustering could be a novel way to isolate signal from noise by similarity in the frequency domain.
 
