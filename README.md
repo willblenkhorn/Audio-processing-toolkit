@@ -56,6 +56,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Graphing library in C++ in case that's too slow: http://www.qcustomplot.com/ which turns out to have some DIY python bindings of it's own https://github.com/dimV36/QCustomPlot-PyQt5  usage: http://developers-club.com/posts/260761/
 * Discussion about loading and playing sound files: http://bastibe.de/2013-11-27-audio-in-python.html
 * Discussion about normalisation and about Cython for speeding it all up: http://bastibe.de/2012-11-02-real-time-signal-processing-in-python.html
+* Sound loading library: https://github.com/bastibe/PySoundFile
 * There are easier alternatives for speedups such a Numba: http://numba.pydata.org/ which uses native python code, another native python compiler which doesn't need code alterations and works well with numpy etc looks most ideal, obviously we need to benchmark all. This is http://nuitka.net/
 
 ## Machine learning ideas list
