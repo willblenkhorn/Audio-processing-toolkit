@@ -13,11 +13,12 @@ import matplotlib.pyplot as plt # graph plotting
 
 nthreads = multiprocessing.cpu_count()
 sampleRate = 41000 # Hz
-tInput = 10 # Seconds
+tInput = 0.1 # Seconds
 lenInput = tInput * sampleRate
 freq1 = 200 # Hz  
 freq2 = 7000 # Hz
 nyquist = 2*sampleRate # Hz, this is the max freq, can reliably be sampled
+time_s = np.linspace( 0.0, (lenInput/sampleRate),  num = lenInput ) # Time for cosine functions
 
 def dataInitialise(lenInput, sampleRate):
     """
@@ -26,9 +27,11 @@ def dataInitialise(lenInput, sampleRate):
     Returns fft test input data as a numpy array
     """
     start = time.time() # start timer
-    time_s = np.linspace( 0.0, (lenInput/sampleRate),  num = lenInput )
-    inputData = 1*np.random.rand(lenInput).astype('complex128') # 64 bit real and 64 bit imag, further 4x speed if use 32bit
+    
+    inputData = 2*np.random.rand(lenInput).astype('complex128') # 64 bit real and 64 bit imag, further 4x speed if use 32bit
     inputData += np.cos( 2*np.pi*time_s * freq1 ) + np.cos( 2*np.pi*time_s * freq2 )
+    dataAverage = np.average( inputData )
+    inputData -= dataAverage # Detrending the input data so it is zero centred
     
     timetaken = time.time() - start
     print('Time taken for data initialisation %.3f secs.' % (timetaken))
@@ -67,14 +70,22 @@ def plotGraphs( fftOutput, sampleRate ):
 
     
     """ Plot frequencies in signal """
+    plt.subplot(2, 1, 1)
     plt.plot( freq, np.abs( fftOutput[:halfLenInput] ) ) # Take first half of FFT, take abs value
+    plt.title('Frequency and time data')
+    plt.ylabel('Amplitude a.u.')
+    plt.xlabel('Frequency / Hz')
     plt.grid()
+    
+    """ Plot input signal as a function of time """ 
+    plt.subplot(2, 1, 2)
+    plt.plot( time_s, inputData )
+    plt.xlabel('time / s')
+    plt.ylabel('Intensity')
+    plt.grid()
+    
     plt.show()
     
-    """ Plot input signal as a function of time """ # Do not uncomment unless time is <100 s, will overload with data...
-    #plt.plot( time_s, input )
-    #plt.show()
-
 
 # Run the functions; compute and look at output
 #--------------------------------------------------
