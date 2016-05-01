@@ -68,5 +68,5 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * Individual component analysis looks interesting: http://scikit-learn.org/stable/tutorial/statistical_inference/unsupervised_learning.html#independent-component-analysis-ica
 * Clustering could be a novel way to isolate signal from noise by similarity in the frequency domain.
 * Emotion classification could be interesting, if a little scary!
-* Prediction is harder to see how this could be applied but post suggestions and we'll see.
+* Prediction of an individual's pattern of speach to identify possible background noise, period of words, spectral content, amplitude etc.
 
