@@ -59,7 +59,7 @@ Audio processing toolkit which will allow audio filtering using a Fourier transf
 * There are easier alternatives for speedups such a Numba: http://numba.pydata.org/ which uses native python code, another native python compiler which doesn't need code alterations and works well with numpy etc looks most ideal, obviously we need to benchmark all. This is http://nuitka.net/
 
 ## Machine learning, 
-** Sound is big data in the time-frequency domain**
+**Sound is big data in the time-frequency domain**
 
 * Clustering analysis in python: http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_iris.html
 * Machine learning/ statistical analysis: "The Elements of Statistical Learning", Springer, Trevor Hastie, 2013
